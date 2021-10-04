@@ -1,0 +1,60 @@
+a{
+    text-decoration: none;
+}
+
+
+
+/*Da las caracteristicas al contenido del header después de la barra de navegación*/
+.contenedor-header{
+    min-height: 50vh;
+    background-image: url("Resources/casa3.jpg");
+    display: flex;
+    flex-direction: column-reverse;
+}
+/*estilos al título del header*/
+.contenedor-header h1{
+    color: white;
+    font-size: 80px;
+}
+
+/*contenedor de las dos opciones de buscar o publicar inmuebles*/
+.bloques{
+    margin: 30px auto 10px auto;
+    display: flex;
+    column-gap: 10px;
+}
+.bloques_item{
+    padding:100px 150px;    
+    text-align: center;
+    color: white;
+}
+
+
+.container_proyectos{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background-image: url("Resources/proyectos.jpg");
+    display: flex;
+    align-items: center;
+    
+}
+.container_proyectos_titulo{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    color:white;
+}
+/*
+.container_items{
+    display: flex;
+    justify-content: space-between;
+    
+}*/
+.container_items{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+}
