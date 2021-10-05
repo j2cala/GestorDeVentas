@@ -46,15 +46,39 @@ a{
     text-align: center;
     color:white;
 }
-/*
-.container_items{
-    display: flex;
-    justify-content: space-between;
-    
-}*/
+
 .container_items{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 15px;
+}
+
+/*- - - - LOGIN - - - -*/
+.container-login{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.contenido-header-login{
+    background-image: url("Resources/casa2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+.formulario{
+    width: 400px;
+}
+/* - - - PUBLICAR - - -*/
+
+.formulario{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
 }

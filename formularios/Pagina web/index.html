@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">DreamLand</a>
+                <a class="navbar-brand" href="index.html">DreamLand</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -31,8 +31,8 @@
                     <a class="nav-link" href="#">Link</a>
                   </li>-->
                     </ul>
-                    <button type="button" class="btn btn-primary me-2">Iniciar sesión</button>
-                    <button type="button" class="btn btn-outline-secondary">Registrarse</button>
+                    <a href="login.html" class="btn btn-primary me-2" role="button">Iniciar sesión</a>
+                    <a href="login.html" class="btn btn-outline-primary me-2" role="button">Registrarse</a>
                 </div>
             </div>
         </nav>
@@ -45,12 +45,21 @@
         <div class="container">
 
             <div class="bloques">
+                <!--
                 <a href="#">
                     <div class="bloques_item" style="background-image: url('Resources/buscarCasa.jpg');">
                         <h2>Buscar Inmueble</h2>
                     </div>
-                </a>
-                <a href="#">
+                </a>-->
+                    <div class="bloques_item" style="background-image: url('Resources/buscarCasa.jpg');">
+                        <h2>Buscar Inmueble</h2>
+                        <form action="" class="form" style="display: flex; column-gap: 10px;">
+                            <input type="text" class="form-control" id="busqueda">
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </form>
+                        
+                    </div>                
+                <a href="publicar.html">
                     <div class="bloques_item" style="background-image: url('Resources/publicar.jpg');">
                         <h2>Publicar Inmueble</h2>
                     </div>
@@ -128,7 +137,7 @@
     <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Publica</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Encuentra</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contáctanos</a></li>
