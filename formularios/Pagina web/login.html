@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="Resources/js/validaciones.js"> </script>
     <title>DreamLand-Iniciar Sesión</title>
 </head>
 
@@ -42,7 +43,7 @@
         <div class="container-md">
             <div class="container-login mt-4 mb-5">
                 <!--formulario de login-->
-                <form class="form-login border p-3 formularios">
+                <form class="form-login border p-3 formularios" method="POST" onsubmit="return validarLogin();">
                     <h2 class="mb-3 fs-2">Inicia sesión</h2>
                     <div class="mb-3">
                         <label for="usuario" class="form-label">Usuario</label>
@@ -61,26 +62,26 @@
                     </div>
                 </form>
                 <p>o también</p>
-                <form class="form-registro mt-3 p-3 border formularios">
+                <form class="form-registro mt-3 p-3 border formularios" method="POST" onsubmit="return validacionSignUp();">
                     <h1 class="fs-2">Regístrate</h1>
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombres *</label>
-                        <input type="text" id="name" class="form-control" placeholder="ej: Edwin Armando" />
+                        <input type="text" id="nameRg" class="form-control" placeholder="ej: Edwin Armando" />
                     </div>
                     <div class="mb-3">
                         <label for="lastName" class="form-label">Apellidos *</label>
-                        <input type="text" id="lastName" class="form-control" placeholder="ej: Casas Palacios" />
+                        <input type="text" id="lastNameRg" class="form-control" placeholder="ej: Casas Palacios" />
                     </div>
                     <div class="mb-3">
                         <label for="mail" class="form-label">Correo electrónico *</label>
-                        <input type="email" id="mail" class="form-control" placeholder="ej: usuario@correo.com"
+                        <input type="email" id="mailRg" class="form-control" placeholder="ej: usuario@correo.com"
                             required />
                     </div>
                     <div class="mb-3">
                         <label for="pass" class="form-label">Contraseña *</label>
-                        <input type="password" id="pass" class="form-control" required />
+                        <input type="password" id="passRg" class="form-control" required />
                         <label for="pass" class="form-label">Verifica tu contraseña *</label>
-                        <input type="password" id="pass" class="form-control" required />
+                        <input type="password" id="VerificaPass" class="form-control" required />
                     </div>
                     <div class="mb-3">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="d-grid gap-2"

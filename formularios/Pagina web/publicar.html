@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="Resources/js/validaciones.js"> </script>
     <title>Publicar en DreamLand</title>
 </head>
 
@@ -40,7 +41,7 @@
     <main>
         <div class="container">
             <h2 class="mb-3 fs-2">Publica en DreamLand</h2>
-            <form class="form-login border p-3 mt-3">             
+            <form class="form-login border p-3 mt-3" method="POST" onsubmit="return validarInmueble();">             
                 <!--Ubicación-->
                 <h3>Datos de ubicación</h3>
                 <div class="mb-3">
@@ -161,7 +162,7 @@
                     <h3>Define el precio y otros detalles</h3>
                     
                         <label for="titulo" class="form-label">Escribe el título de tu publicación</label>
-                        <input type="email" class="form-control" id="titulo" aria-describedby="tituloHelp">
+                        <input type="text" class="form-control" id="titulo" aria-describedby="tituloHelp">
                         <div id="tituloHelp" class="form-text">Esto es lo que se mostrará en la publicación. Elige algo como "Se vende casa a las afueras de la ciudad."</div>
                       <div class="input-group">
                         <label for="precio" class="input-group mt-2">Precio</label>
